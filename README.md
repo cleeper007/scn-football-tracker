@@ -38,6 +38,9 @@ Where to pull the numbers each week:
 | File | What it is |
 | --- | --- |
 | `assets/banner.jpg` | Hero banner. If missing, a CSS stand-in renders instead. |
+
+When you replace `assets/banner.jpg`, bump the `?v=` number on its `src` in `index.html`. The filename stays the same, so without that bump browsers keep showing the old banner from cache.
+
 | `assets/logos/maxpreps.svg` | Hand-drawn approximation of the MaxPreps wordmark. |
 | `assets/logos/on3.svg` | Hand-drawn approximation of the On3 mark. |
 | `assets/logos/dukane.svg` | Hand-drawn approximation of the DuKane Conference shield. |

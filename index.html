@@ -11,7 +11,9 @@
 
 <header class="hero">
   <div class="hero-media" id="hero-media">
-    <img id="hero-img" src="assets/banner.jpg" width="1028" height="962"
+    <!-- ?v= is bumped whenever banner.jpg is replaced, so browsers holding the
+         previous image do not keep serving it from cache -->
+    <img id="hero-img" src="assets/banner.jpg?v=2" width="1028" height="962"
          alt="St. Charles North football players taking the field behind the North Stars flag">
     <div class="hero-fallback" aria-hidden="true">
       <div class="hero-mark">N<span class="star">&#9733;</span></div>
