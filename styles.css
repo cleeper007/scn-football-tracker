@@ -1,0 +1,184 @@
+:root{
+  --navy-950:#050d1a;
+  --navy-900:#0a1628;
+  --navy-800:#0f2140;
+  --navy-700:#13294b;
+  --navy-600:#1b3a6b;
+  --line:rgba(140,170,215,.18);
+  --silver:#c3cbd6;
+  --muted:#8695ab;
+  --white:#fff;
+  --accent:#4a90e2;
+  --accent-dim:#2e6fd9;
+  --shadow:0 10px 30px rgba(0,0,0,.45);
+  --r:14px;
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:
+    radial-gradient(1200px 600px at 50% -10%, #16305c 0%, transparent 60%),
+    var(--navy-950);
+  color:var(--silver);
+  font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+  min-height:100vh;
+}
+
+/* ---------- HERO ---------- */
+.hero{
+  position:relative;
+  min-height:clamp(230px,34vw,420px);
+  display:flex;
+  align-items:flex-end;
+  background:var(--navy-900) center/cover no-repeat;
+  border-bottom:1px solid var(--line);
+  overflow:hidden;
+}
+.hero.has-image .hero-fallback{display:none}
+.hero-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(5,13,26,.15) 0%,rgba(5,13,26,.55) 55%,rgba(5,13,26,.92) 100%);
+}
+/* CSS-only stand-in until assets/banner.jpg is added */
+.hero-fallback{
+  position:absolute;inset:0;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:2px;text-align:center;
+  background:
+    radial-gradient(700px 300px at 50% 25%, rgba(46,111,217,.28) 0%, transparent 70%),
+    linear-gradient(180deg,#0d1e3c 0%,#081426 100%);
+}
+.hero-mark{
+  font:900 clamp(46px,8vw,86px)/1 Georgia,"Times New Roman",serif;
+  color:var(--white);letter-spacing:-2px;
+  text-shadow:0 4px 18px rgba(0,0,0,.6);
+}
+.hero-mark .star{color:var(--accent);font-size:.72em;margin-left:-.06em;vertical-align:.22em}
+.hero-school{
+  font-size:clamp(11px,2vw,17px);letter-spacing:.42em;text-transform:uppercase;
+  color:#dbe4f0;margin-top:10px;padding-left:.42em;
+}
+.hero-word{
+  font:900 clamp(34px,8.5vw,84px)/1 Impact,"Haettenschweiler","Arial Narrow",sans-serif;
+  letter-spacing:.06em;color:var(--white);margin-top:2px;
+}
+.hero-sub{
+  font-size:clamp(9px,1.6vw,13px);letter-spacing:.4em;text-transform:uppercase;
+  color:var(--accent);margin-top:8px;padding-left:.4em;
+}
+.hero-caption{
+  position:relative;z-index:2;
+  width:100%;max-width:1040px;margin:0 auto;
+  padding:0 20px 22px;
+}
+.hero-caption h1{
+  margin:0;color:var(--white);
+  font-size:clamp(22px,4.2vw,38px);font-weight:800;letter-spacing:-.5px;
+  text-shadow:0 2px 12px rgba(0,0,0,.7);
+}
+.hero-meta{
+  margin:6px 0 0;color:#c9d6e8;font-size:14px;
+  text-shadow:0 1px 8px rgba(0,0,0,.8);
+}
+.hero-meta .dot{margin:0 8px;color:var(--accent)}
+
+/* ---------- LAYOUT ---------- */
+.wrap{max-width:1040px;margin:0 auto;padding:26px 20px 40px}
+.cards{
+  display:grid;gap:18px;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  margin-bottom:18px;
+}
+.card{
+  background:linear-gradient(180deg,rgba(27,58,107,.42) 0%,rgba(10,22,40,.75) 100%);
+  border:1px solid var(--line);
+  border-radius:var(--r);
+  padding:18px;
+  box-shadow:var(--shadow);
+}
+.card-head{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding-bottom:14px;margin-bottom:14px;
+  border-bottom:1px solid var(--line);
+}
+.src-link{
+  color:var(--accent);text-decoration:none;font-size:13px;font-weight:600;
+  white-space:nowrap;padding:5px 10px;border-radius:8px;
+  border:1px solid rgba(74,144,226,.32);transition:.15s;
+}
+.src-link:hover{background:rgba(74,144,226,.14);color:#8fc0ff}
+
+/* ---------- BRAND LOGOS (image, with styled text fallback) ---------- */
+.brand{display:inline-flex;align-items:center;min-height:30px}
+.brand img{max-height:30px;max-width:170px;width:auto;display:block}
+.brand .wordmark{display:none}
+.brand.no-logo img{display:none}
+.brand.no-logo .wordmark{display:inline-flex;align-items:baseline}
+
+.wm-maxpreps{
+  font-weight:800;font-size:19px;letter-spacing:-.4px;color:var(--white);
+  background:linear-gradient(90deg,#ff6a1a,#ff9d2e);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.wm-on3{font-weight:800;font-size:20px;letter-spacing:-.6px;color:var(--white)}
+.wm-on3 .on3-num{color:#e03131}
+.wm-dukane{
+  font-weight:800;font-size:18px;color:var(--white);letter-spacing:-.2px;
+  display:inline-flex;align-items:baseline;gap:7px;
+}
+.wm-dukane .wm-thin{
+  font-weight:500;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);
+}
+
+/* ---------- RANK ROWS ---------- */
+.ranks{list-style:none;margin:0;padding:0}
+.ranks li{
+  display:flex;align-items:baseline;justify-content:space-between;gap:12px;
+  padding:11px 0;border-bottom:1px solid rgba(140,170,215,.09);
+}
+.ranks li:last-child{border-bottom:0;padding-bottom:2px}
+.rank-label{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.rank-value{font-size:26px;font-weight:800;color:var(--white);line-height:1;font-variant-numeric:tabular-nums}
+.rank-value .hash{font-size:16px;color:var(--accent);margin-right:1px;font-weight:700}
+.rank-value.empty{color:#4d5d75;font-size:22px}
+
+.note{margin:14px 0 0;font-size:12.5px;color:var(--muted);font-style:italic}
+
+/* ---------- STANDINGS ---------- */
+.standings-card{padding-bottom:16px}
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.standings{width:100%;border-collapse:collapse;min-width:420px}
+.standings th{
+  text-align:left;font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--muted);font-weight:600;padding:0 10px 10px;
+}
+.standings td{padding:11px 10px;border-top:1px solid rgba(140,170,215,.09);font-size:15px}
+.standings .c-rank{width:34px;text-align:center}
+.standings .c-num{width:88px;text-align:center}
+.standings td.c-num{text-align:center;font-variant-numeric:tabular-nums;color:var(--silver)}
+.standings td.c-rank{color:var(--muted);font-size:13px;font-variant-numeric:tabular-nums}
+.standings td.c-team{font-weight:600;color:#dfe6f0}
+.standings tr.is-scn{background:linear-gradient(90deg,rgba(74,144,226,.20),rgba(74,144,226,.04))}
+.standings tr.is-scn td{color:var(--white)}
+.standings tr.is-scn td.c-team{font-weight:800}
+.standings tr.is-scn td.c-team::after{
+  content:"\2605";color:var(--accent);margin-left:8px;font-size:12px;
+}
+
+/* ---------- FOOTER ---------- */
+.foot{margin-top:26px;padding-top:18px;border-top:1px solid var(--line);text-align:center}
+.foot p{margin:0 0 8px;font-size:13px;color:var(--muted)}
+.foot strong{color:var(--silver);font-weight:600}
+.fine{font-size:11.5px;line-height:1.5;max-width:620px;margin:0 auto;color:#6b7a90}
+.fine code{
+  background:rgba(140,170,215,.12);padding:1px 5px;border-radius:4px;
+  font-size:11px;color:var(--silver);
+}
+
+@media (max-width:560px){
+  .wrap{padding:20px 14px 32px}
+  .card{padding:15px}
+  .rank-value{font-size:23px}
+}

@@ -1,0 +1,52 @@
+{
+  "season": "2026",
+  "lastUpdated": "2026-08-08",
+  "team": {
+    "name": "St. Charles North",
+    "mascot": "North Stars",
+    "city": "St. Charles, IL",
+    "class": "7A",
+    "conference": "DuKane Conference"
+  },
+  "record": {
+    "overall": "0-0",
+    "conference": "0-0"
+  },
+  "sources": {
+    "maxpreps": {
+      "label": "MaxPreps",
+      "url": "https://www.maxpreps.com/il/st-charles/st-charles-north-north-stars/football/",
+      "rankings": [
+        { "label": "National", "value": null },
+        { "label": "Illinois", "value": null },
+        { "label": "Class 7A", "value": null }
+      ],
+      "note": "Preseason — MaxPreps rankings publish after Week 1."
+    },
+    "on3": {
+      "label": "On3",
+      "url": "https://www.on3.com/high-school/st-charles-north-saint-charles-il-11399/football/schedule/",
+      "rankings": [
+        { "label": "National", "value": null },
+        { "label": "Illinois", "value": null },
+        { "label": "Recruit Rank", "value": null }
+      ],
+      "note": "Preseason — On3 rankings publish after Week 1."
+    }
+  },
+  "dukane": {
+    "label": "DuKane Conference",
+    "url": "https://www.si.com/high-school/stats/illinois/football/leagues/9147-dukane",
+    "note": "Preseason — no games played yet.",
+    "standings": [
+      { "team": "Batavia", "conf": "0-0", "overall": "0-0" },
+      { "team": "Geneva", "conf": "0-0", "overall": "0-0" },
+      { "team": "Glenbard North", "conf": "0-0", "overall": "0-0" },
+      { "team": "Lake Park", "conf": "0-0", "overall": "0-0" },
+      { "team": "St. Charles East", "conf": "0-0", "overall": "0-0" },
+      { "team": "St. Charles North", "conf": "0-0", "overall": "0-0" },
+      { "team": "Wheaton North", "conf": "0-0", "overall": "0-0" },
+      { "team": "Wheaton Warrenville South", "conf": "0-0", "overall": "0-0" }
+    ]
+  }
+}

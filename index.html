@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SCN Football Tracker — St. Charles North Rankings</title>
+<meta name="description" content="Season rankings tracker for St. Charles North North Stars football: MaxPreps, On3, and DuKane Conference standings.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="hero" id="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-fallback" aria-hidden="true">
+    <div class="hero-mark">N<span class="star">&#9733;</span></div>
+    <div class="hero-school">St. Charles North</div>
+    <div class="hero-word">FOOTBALL</div>
+    <div class="hero-sub">North Stars</div>
+  </div>
+  <div class="hero-caption">
+    <h1>Rankings Tracker</h1>
+    <p class="hero-meta">
+      <span id="season-label">2026 Season</span>
+      <span class="dot">&bull;</span>
+      <span id="record-label">0-0</span>
+      <span class="dot">&bull;</span>
+      <span>DuKane Conference</span>
+    </p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="cards" aria-label="Ranking sources">
+
+    <article class="card" id="card-maxpreps">
+      <div class="card-head">
+        <span class="brand no-logo" data-logo="assets/logos/maxpreps.png">
+          <img alt="MaxPreps">
+          <span class="wordmark wm-maxpreps">MaxPreps</span>
+        </span>
+        <a class="src-link" href="#" data-link="maxpreps" target="_blank" rel="noopener">View&nbsp;&rarr;</a>
+      </div>
+      <ul class="ranks" data-ranks="maxpreps"></ul>
+      <p class="note" data-note="maxpreps"></p>
+    </article>
+
+    <article class="card" id="card-on3">
+      <div class="card-head">
+        <span class="brand no-logo" data-logo="assets/logos/on3.png">
+          <img alt="On3">
+          <span class="wordmark wm-on3">On<span class="on3-num">3</span></span>
+        </span>
+        <a class="src-link" href="#" data-link="on3" target="_blank" rel="noopener">View&nbsp;&rarr;</a>
+      </div>
+      <ul class="ranks" data-ranks="on3"></ul>
+      <p class="note" data-note="on3"></p>
+    </article>
+
+  </section>
+
+  <section class="card standings-card" aria-label="DuKane Conference standings">
+    <div class="card-head">
+      <span class="brand no-logo" data-logo="assets/logos/dukane.png">
+        <img alt="DuKane Conference">
+        <span class="wordmark wm-dukane">DuKane<span class="wm-thin">Conference</span></span>
+      </span>
+      <a class="src-link" href="#" data-link="dukane" target="_blank" rel="noopener">View&nbsp;&rarr;</a>
+    </div>
+
+    <div class="table-scroll">
+      <table class="standings">
+        <thead>
+          <tr><th class="c-rank"></th><th class="c-team">Team</th><th class="c-num">Conf</th><th class="c-num">Overall</th></tr>
+        </thead>
+        <tbody id="standings-body"></tbody>
+      </table>
+    </div>
+    <p class="note" data-note="dukane"></p>
+  </section>
+
+  <footer class="foot">
+    <p>Last updated <strong id="updated">&mdash;</strong></p>
+    <p class="fine">Rankings and standings are entered manually in <code>data.json</code>. MaxPreps, On3, and DuKane Conference are trademarks of their respective owners; this is an unofficial fan-made tracker.</p>
+  </footer>
+
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
