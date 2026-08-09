@@ -1,9 +1,7 @@
 /* SCN Football Tracker — renders data.json into the dashboard. */
 
-const BANNER = 'assets/banner.jpg';
-
 document.addEventListener('DOMContentLoaded', () => {
-  loadBanner();
+  initBanner();
   loadBrandLogos();
   fetch('data.json?cb=' + Date.now())
     .then(r => {
@@ -19,15 +17,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-/* Use the real banner image if assets/banner.jpg exists; otherwise keep the CSS stand-in. */
-function loadBanner() {
-  const hero = document.getElementById('hero');
-  const probe = new Image();
-  probe.onload = () => {
-    hero.style.backgroundImage = `url("${BANNER}")`;
-    hero.classList.add('has-image');
-  };
-  probe.src = BANNER;
+/* Reveal the banner once it loads; if it 404s, the CSS stand-in stays put. */
+function initBanner() {
+  const media = document.getElementById('hero-media');
+  const img = document.getElementById('hero-img');
+  if (!media || !img) return;
+  const show = () => media.classList.add('has-image');
+  if (img.complete && img.naturalWidth > 0) show();
+  img.addEventListener('load', show);
+  img.addEventListener('error', () => media.classList.remove('has-image'));
 }
 
 /* Swap in official logo files if the user drops them into assets/logos/. */
