@@ -175,13 +175,8 @@ body{
 
 /* ---------- FOOTER ---------- */
 .foot{margin-top:26px;padding-top:18px;border-top:1px solid var(--line);text-align:center}
-.foot p{margin:0 0 8px;font-size:13px;color:var(--muted)}
+.foot p{margin:0;font-size:13px;color:var(--muted)}
 .foot strong{color:var(--silver);font-weight:600}
-.fine{font-size:11.5px;line-height:1.5;max-width:620px;margin:0 auto;color:#6b7a90}
-.fine code{
-  background:rgba(140,170,215,.12);padding:1px 5px;border-radius:4px;
-  font-size:11px;color:var(--silver);
-}
 
 @media (max-width:560px){
   .wrap{padding:20px 14px 32px}
