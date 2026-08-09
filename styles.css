@@ -31,18 +31,17 @@ body{
   background:var(--navy-950);
   border-bottom:1px solid var(--line);
 }
-/* The banner is a finished piece of artwork with its own wordmark, so it is
-   shown whole at its native ratio rather than cropped to a fixed height. */
+/* The banner is a near-square photo, so the frame holds a wide ratio of its own
+   and the photo is cropped into it rather than setting the header height itself. */
 .hero-media{
   position:relative;
   width:100%;max-width:1180px;margin:0 auto;
-  aspect-ratio:1338/710;
+  aspect-ratio:16/9;
   background:var(--navy-900);
   overflow:hidden;
 }
-/* once the banner loads it defines the height, so the placeholder ratio is dropped */
-.hero-media.has-image{aspect-ratio:auto}
-.hero-media img{display:none;width:100%;height:auto}
+/* pulled slightly above centre so the helmets and flag stay in frame */
+.hero-media img{display:none;width:100%;height:100%;object-fit:cover;object-position:50% 38%}
 .hero-media.has-image img{display:block}
 .hero-media.has-image .hero-fallback{display:none}
 /* CSS-only stand-in until assets/banner.jpg is added */
@@ -179,6 +178,8 @@ body{
 .foot strong{color:var(--silver);font-weight:600}
 
 @media (max-width:560px){
+  /* a 16/9 strip gets too thin on a phone, so give the photo more height */
+  .hero-media{aspect-ratio:4/3}
   .wrap{padding:20px 14px 32px}
   .card{padding:15px}
   .rank-value{font-size:23px}
