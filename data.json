@@ -18,20 +18,20 @@
       "url": "https://www.maxpreps.com/il/st-charles/st-charles-north-north-stars/football/",
       "rankings": [
         { "label": "National", "value": null },
-        { "label": "Illinois", "value": null },
+        { "label": "Illinois", "value": 18 },
         { "label": "Class 7A", "value": null }
       ],
-      "note": "Preseason — MaxPreps rankings publish after Week 1."
+      "note": "Preseason ranking — updates once games are played."
     },
     "on3": {
       "label": "On3",
       "url": "https://www.on3.com/high-school/st-charles-north-saint-charles-il-11399/football/schedule/",
       "rankings": [
         { "label": "National", "value": null },
-        { "label": "Illinois", "value": null },
+        { "label": "Illinois", "value": 19 },
         { "label": "Recruit Rank", "value": null }
       ],
-      "note": "Preseason — On3 rankings publish after Week 1."
+      "note": "Preseason ranking — updates once games are played."
     }
   },
   "dukane": {
