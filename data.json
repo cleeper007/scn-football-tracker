@@ -27,9 +27,9 @@
       "label": "On3",
       "url": "https://www.on3.com/high-school/st-charles-north-saint-charles-il-11399/football/schedule/",
       "rankings": [
-        { "label": "National", "value": null },
+        { "label": "National", "value": 514 },
         { "label": "Illinois", "value": 19 },
-        { "label": "Recruit Rank", "value": null }
+        { "label": "Class 7A", "value": 5 }
       ],
       "note": "Preseason ranking — updates once games are played."
     }
