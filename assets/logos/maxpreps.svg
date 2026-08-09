@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 64" role="img" aria-label="MaxPreps">
+  <title>MaxPreps</title>
+  <g transform="skewX(-8) translate(9,0)" fill="#f42534">
+    <text x="0" y="49" textLength="62" lengthAdjust="spacingAndGlyphs"
+          font-family="Impact, Haettenschweiler, 'Arial Narrow', 'Arial Black', sans-serif"
+          font-size="52" font-weight="900" letter-spacing="-1">MA</text>
+
+    <!-- athlete "X": crossed limbs + head -->
+    <g>
+      <path d="M64 12 L78 12 L96 47 L82 47 Z"/>
+      <path d="M96 12 L82 12 L64 47 L78 47 Z"/>
+      <circle cx="80" cy="7" r="7.5"/>
+    </g>
+
+    <text x="98" y="49" textLength="140" lengthAdjust="spacingAndGlyphs"
+          font-family="Impact, Haettenschweiler, 'Arial Narrow', 'Arial Black', sans-serif"
+          font-size="52" font-weight="900" letter-spacing="-1">PREPS</text>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="On3">
+  <title>On3</title>
+  <rect width="120" height="120" rx="26" fill="#fc4c19"/>
+  <text x="14" y="76" textLength="52" lengthAdjust="spacingAndGlyphs"
+        font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="46" font-weight="600" fill="#fff">On</text>
+  <rect x="70" y="34" width="38" height="46" rx="9" fill="#fff"/>
+  <text x="89" y="70" text-anchor="middle"
+        font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="38" font-weight="700" fill="#fc4c19">3</text>
+</svg>

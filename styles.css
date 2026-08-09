@@ -88,7 +88,7 @@ body{
 .wrap{max-width:1040px;margin:0 auto;padding:26px 20px 40px}
 .cards{
   display:grid;gap:18px;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));
   margin-bottom:18px;
 }
 .card{
@@ -111,8 +111,13 @@ body{
 .src-link:hover{background:rgba(74,144,226,.14);color:#8fc0ff}
 
 /* ---------- BRAND LOGOS (image, with styled text fallback) ---------- */
-.brand{display:inline-flex;align-items:center;min-height:30px}
-.brand img{max-height:30px;max-width:170px;width:auto;display:block}
+.brand{display:inline-flex;align-items:center;min-height:34px}
+/* explicit height + auto width: replaced elements resolve their ratio
+   reliably this way, where max-height alone collapses them in flex */
+.brand img{height:34px;width:auto;max-width:180px;display:block;flex:0 0 auto}
+/* the DuKane shield is tall, so give it more room */
+.standings-card .brand{min-height:54px}
+.standings-card .brand img{height:54px}
 .brand .wordmark{display:none}
 .brand.no-logo img{display:none}
 .brand.no-logo .wordmark{display:inline-flex;align-items:baseline}
@@ -149,7 +154,7 @@ body{
 /* ---------- STANDINGS ---------- */
 .standings-card{padding-bottom:16px}
 .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
-.standings{width:100%;border-collapse:collapse;min-width:420px}
+.standings{width:100%;border-collapse:collapse;min-width:360px}
 .standings th{
   text-align:left;font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;
   color:var(--muted);font-weight:600;padding:0 10px 10px;

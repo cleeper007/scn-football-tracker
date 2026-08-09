@@ -38,11 +38,11 @@ Where to pull the numbers each week:
 | File | What it is |
 | --- | --- |
 | `assets/banner.jpg` | Hero banner. If missing, a CSS stand-in renders instead. |
-| `assets/logos/maxpreps.png` | Optional. Falls back to a styled text wordmark. |
-| `assets/logos/on3.png` | Optional. Same fallback. |
-| `assets/logos/dukane.png` | Optional. Same fallback. |
+| `assets/logos/maxpreps.svg` | Hand-drawn approximation of the MaxPreps wordmark. |
+| `assets/logos/on3.svg` | Hand-drawn approximation of the On3 mark. |
+| `assets/logos/dukane.svg` | Hand-drawn approximation of the DuKane Conference shield. |
 
-Drop a file in and it appears on next load — no code changes needed. `.svg` also works; update the `data-logo` path in `index.html` if you use a different extension.
+The three logo files are **recreations, not official brand assets** — close enough to read at a glance, but not exact. To swap in the real files, replace them at the same paths (update the `data-logo` attribute in `index.html` if the extension changes). If a logo file is missing or fails to load, the card falls back to a styled text wordmark automatically.
 
 ## Running locally
 
