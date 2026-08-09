@@ -39,14 +39,14 @@
     "url": "https://www.si.com/high-school/stats/illinois/football/leagues/9147-dukane",
     "note": "Preseason — no games played yet.",
     "standings": [
+      { "team": "St. Charles North", "conf": "0-0", "overall": "0-0" },
       { "team": "Batavia", "conf": "0-0", "overall": "0-0" },
+      { "team": "Wheaton Warrenville South", "conf": "0-0", "overall": "0-0" },
       { "team": "Geneva", "conf": "0-0", "overall": "0-0" },
       { "team": "Glenbard North", "conf": "0-0", "overall": "0-0" },
       { "team": "Lake Park", "conf": "0-0", "overall": "0-0" },
       { "team": "St. Charles East", "conf": "0-0", "overall": "0-0" },
-      { "team": "St. Charles North", "conf": "0-0", "overall": "0-0" },
-      { "team": "Wheaton North", "conf": "0-0", "overall": "0-0" },
-      { "team": "Wheaton Warrenville South", "conf": "0-0", "overall": "0-0" }
+      { "team": "Wheaton North", "conf": "0-0", "overall": "0-0" }
     ]
   }
 }
