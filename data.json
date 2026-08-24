@@ -1,6 +1,6 @@
 {
   "season": "2026",
-  "lastUpdated": "2026-08-08",
+  "lastUpdated": "2026-08-24",
   "team": {
     "name": "St. Charles North",
     "mascot": "North Stars",
@@ -9,7 +9,7 @@
     "conference": "DuKane Conference"
   },
   "record": {
-    "overall": "0-0",
+    "overall": "1-0",
     "conference": "0-0"
   },
   "sources": {
@@ -21,7 +21,7 @@
         { "label": "Illinois", "value": 18 },
         { "label": "National", "value": null }
       ],
-      "note": "Preseason ranking — updates once games are played."
+      "note": "Week 1: beat Minooka 28-7 (non-conference). Rankings shown are preseason — confirm this week's update at the link above."
     },
     "on3": {
       "label": "On3",
@@ -31,15 +31,15 @@
         { "label": "Illinois", "value": 19 },
         { "label": "National", "value": 514 }
       ],
-      "note": "Preseason ranking — updates once games are played."
+      "note": "Week 1: beat Minooka 28-7 (non-conference). Rankings shown are preseason — confirm this week's update at the link above."
     }
   },
   "dukane": {
     "label": "DuKane Conference",
     "url": "https://www.si.com/high-school/stats/illinois/football/leagues/9147-dukane",
-    "note": "Preseason — no games played yet.",
+    "note": "Week 1 in the books — conference play hasn't started yet, so conference records are still 0-0.",
     "standings": [
-      { "team": "St. Charles North", "conf": "0-0", "overall": "0-0" },
+      { "team": "St. Charles North", "conf": "0-0", "overall": "1-0" },
       { "team": "Batavia", "conf": "0-0", "overall": "0-0" },
       { "team": "Wheaton Warrenville South", "conf": "0-0", "overall": "0-0" },
       { "team": "Geneva", "conf": "0-0", "overall": "0-0" },
